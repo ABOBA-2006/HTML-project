@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="BTS_logo.png">
+    <title>My life</title>
+    <link rel="stylesheet" type="text/css" href="BigPowerfullHardProject.css">
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <div id="leftTopTriangle"></div>
+    <div id="leftBottomTriangle"></div>
+    <div id="rightTopTriangle"></div>
+    <div id="rightBottomTriangle"></div>
+    <img src="Dota-2-Logo.png" id="dotaLogo">
+    <img src="anime_logo.png" id="animeLogo">
+    <img src="gamabunta.png" id="gamabunta">
+    <img src="spotify_logo.png" id="spotifyLogo">
+    <button id="startButton" onclick="checkConfidance()">Чи ви готові дізнатися про моє життя ???</button>
+
+
+    <div id="loadingScreen1">
+      <h1>World of Dota2</h1>
+    </div>
+    <div id="dotaPage">
+      <div id="title"><h1>Dota 2</h1></div>
+      <div id="firstBlock"></div>
+      <div id="secondBlock"></div>
+      <div id="thirdBlock"></div>
+      <button id="nextPageDota" onclick="clearDotaAnimations()">Наступна сторінка</button>
+    </div>
+
+    <div id="loadingScreen2">
+      <h1>World of Anime</h1>
+    </div>
+
+    <div id="animePage">
+      <div id="titleAnime"><h1>Anime</h1></div>
+      <div id="firstBlockAnime"></div>
+      <div id="secondBlockAnime"></div>
+      <div id="thirdBlockAnime"></div>
+      <button id="nextPageAnime" onclick="clearAnimeAnimations()">Наступна сторінка</button>
+    </div>
+
+    <div id="mapNavigation">
+      <div id="pinkBlock">
+        <h1 id="textInPinkBlock">Навігація по сайту</h1>
+        <button id="backToDota" onclick="dotaPageAnimationsBack()">Dota2</button>
+        <button id="backToAnime" onclick="animePageAnimationsBack()">Anime</button>
+      </div>
+    </div>
+
+    <div id="emptyWhiteBlock"></div>
+    <button id="backButton" onclick="backDotaToNav()">Back</button>
+    <button id="backButton2" onclick="backAnimeToNav()">Back</button>
+  	<script type="text/javascript" src="BigPowerfullHardProject.js"></script>
+  </body>
+</html>

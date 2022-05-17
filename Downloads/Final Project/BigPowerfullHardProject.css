@@ -1,0 +1,683 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+.swal-modal{
+	width: 35%;
+	font-family: comic sans ms;
+}
+
+.swal-text{
+	text-align: center;
+}
+
+.swal-title{
+	text-align: center;
+}
+
+#startButton{
+	position:absolute;
+	font-family: comic sans ms;
+	height:auto;
+	width:30%;
+	left:-35%;
+	border-radius:16px;
+	top:43vh;
+	border-width: 1px;
+	font-size:40px;
+	color:#2EECE4;
+	background-color: #F35432;
+	border-color: #D4482A;
+	transition: 0.5s ease background-color, border-color;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+	text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#startButton:hover{
+	background-color: #CD1414;
+	border-color: #A00F0F;
+}
+
+#leftTopTriangle{
+	top:0%;
+	position: absolute;
+	left:0%;
+	width: 0;
+   height: 0;
+   border: solid 140px;
+   border-color: #F35432 transparent transparent #F35432;
+}
+
+#leftBottomTriangle{
+	position: absolute;
+	bottom: 0px;
+	left:0%;
+	width: 0;
+   height: 0;
+   border: solid 140px;
+   border-color: transparent transparent #F35432 #F35432;
+}
+
+#rightTopTriangle{
+	position: absolute;
+	top: 0px;
+	right:0%;
+	width: 0;
+   height: 0;
+   border: solid 140px;	
+   border-color: #F35432 #F35432 transparent transparent;
+}
+
+#rightBottomTriangle{
+	position: absolute;
+	bottom: 0px;
+	right:0%;
+	width: 0;
+   height: 0;
+   border: solid 140px;	
+   border-color: transparent #F35432 #F35432 transparent;
+}
+
+#dotaLogo{
+	width:10%;
+	height: auto;
+	position:absolute;
+	left:20%;
+	top:150px;
+}
+
+#animeLogo{
+	width:8%;
+	height: auto;
+	position:absolute;
+	left:21%;
+	bottom:150px;
+}
+
+#gamabunta{
+	width:8%;
+	height: auto;
+	position:absolute;
+	right:20%;
+	top:150px;
+}
+
+#spotifyLogo{
+	width:7%;
+	height: auto;
+	position:absolute;
+	right:21%;
+	bottom:150px;
+}
+
+#loadingScreen1{
+	text-align:center;
+	font-family: comic sans ms;
+	width:40%;
+	margin-left:30%;
+	margin-top:30vh;
+	box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+	border-radius:16px;
+	height: 200px;
+	padding-top: 150px;
+	color:crimson;
+}
+
+#loadingScreen2{
+	text-align:center;
+	font-family: comic sans ms;
+	width:40%;
+	margin-left:30%;
+	margin-top:30vh;
+	box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+	border-radius:16px;
+	height: 200px;
+	padding-top: 150px;
+	color:crimson;
+}
+
+#title{
+	text-align: center;
+	font-family: comic sans ms;
+	width:20%;
+	margin-left:40%;
+	margin-top:50px;
+	box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+	border-radius:30px;
+	height: auto;
+	color:crimson;
+	background-color: #F5CCCC;
+}
+
+#firstBlock{
+	width:60%;
+	height:550px;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	margin-left:-60%;
+	margin-top:100px;
+	border-radius:16px;
+}
+
+#secondBlock{
+	width:60%;
+	height:550px;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	margin-left:20%;
+	margin-top:100px;
+	border-radius:16px;
+}
+
+#thirdBlock{
+	width:60%;
+	height:550px;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	margin-left:5%;
+	margin-top:100px;
+	margin-bottom: 100px;
+	border-radius:16px;
+}
+
+#nextPageDota{
+	width: 15%;
+	margin-left: 42.5%;
+	margin-bottom: 100px;
+	border-radius: 16px;
+	height: 100px;
+	font-family: comic sans ms;
+	background-color: #F35432;
+	border-color: #D4482A;
+	color:#2EECE4;
+	font-weight: 500;
+	font-size: 25px;
+	transition: 0.5s ease background-color, border-color;
+}
+
+#nextPageDota:hover{
+	background-color: #CD1414;
+	border-color: #A00F0F;
+}
+
+#titleAnime{
+	text-align: center;
+	font-family: comic sans ms;
+	width:20%;
+	margin-left:40%;
+	margin-top:50px;
+	box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+	border-radius:30px;
+	height: auto;
+	color:crimson;
+	background-color: #F5CCCC;
+}
+
+#firstBlockAnime{
+	width:60%;
+	height:550px;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	margin-left:-60%;
+	margin-top:100px;
+	border-radius:16px;
+}
+
+#secondBlockAnime{
+	width:60%;
+	height:550px;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	margin-left:20%;
+	margin-top:100px;
+	border-radius:16px;
+}
+
+#thirdBlockAnime{
+	width:60%;
+	height:550px;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	margin-left:5%;
+	margin-top:100px;
+	margin-bottom: 100px;
+	border-radius:16px;
+}
+
+#mapNavigation{
+	width: 50%;
+	margin-left: 25%;
+	height: 50vh;
+	margin-top: 25vh;
+	border-radius: 20px;
+	padding-top: 5vh;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+#pinkBlock{
+	width: 80%;
+	margin-left: 10%;
+}
+
+#nextPageAnime{
+	width: 15%;
+	margin-left: 42.5%;
+	margin-bottom: 100px;
+	border-radius: 16px;
+	height: 100px;
+	font-family: comic sans ms;
+	background-color: #F35432;
+	border-color: #D4482A;
+	color:#2EECE4;
+	font-weight: 500;
+	font-size: 25px;
+	transition: 0.5s ease background-color, border-color;
+}
+
+#nextPageAnime:hover{
+	background-color: #CD1414;
+	border-color: #A00F0F;
+}
+
+#emptyWhiteBlock{
+	width: 100%;
+	height: 240vh;
+	position: absolute;
+	top: 0px;
+	background-color: white;
+}
+
+#pinkBlock{
+	width: 90%;
+	height: 45vh;
+	margin-left: 5%;
+	background-color: #F35432;;
+	border-radius: 16px;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+	text-align: center;
+	font-family: comic sans ms;
+	color:#2EECE4;
+	font-size: 22px;
+}
+
+#backToDota{
+	width: 20%;
+	border-radius: 16px;
+	font-size: 25px;
+	margin-top: 120px;
+	margin-right: 20%;
+	background-color: white;
+	font-family: comic sans ms;
+	transition: .6s ease background-color;
+}
+
+#backToDota:hover{
+	background-color: lightgray;
+}
+
+#backToAnime{
+	width: 20%;
+	border-radius: 16px;
+	font-size: 25px;
+	margin-top: 120px;
+	background-color: white;
+	font-family: comic sans ms;
+	transition: .6s ease background-color;
+}
+
+#backToAnime:hover{
+	background-color: lightgray;
+}
+
+#backButton{
+	width: 10%;
+	font-size: 20px;
+	position: fixed;
+	right: 5%;
+	border-radius: 16px;
+	bottom: 100px;
+	font-family: comic sans ms;
+}
+
+#backButton:hover{
+	background-color: lightgray;
+}
+
+#backButton2{
+	width: 10%;
+	font-size: 20px;
+	position: fixed;
+	right: 5%;
+	border-radius: 16px;
+	bottom: 100px;
+	font-family: comic sans ms;
+}
+
+#backButton2:hover{
+	background-color: lightgray;
+}
+
+#textInPinkBlock{
+	padding-top: 50px;
+}
+
+
+
+@media screen and (max-width: 1400px) and (min-width: 1281px){
+	#startButton{
+		font-size: 40px;
+	}
+	#dotaLogo{
+		width: 15%;
+		top: 160px;
+	}
+	#gamabunta{
+		width: 12%;
+	}
+	#animeLogo{
+		width: 12%;
+	}
+	#spotifyLogo{
+		width: 9.5%;
+	}
+	#nextPageDota{
+		font-size: 20px;
+	}
+	#mapNavigation{
+		width: 70%;
+		margin-left: 15%;
+	}
+	#textInPinkBlock{
+		padding-top: 100px;
+	}
+}
+
+@media screen and (max-width: 1280px){
+	#startButton{
+		font-size: 40px;
+		top: 40vh;
+	}
+	#dotaLogo{
+		width: 15%;
+		top: 140px;
+		left: 16%;
+	}
+	#gamabunta{
+		width: 12%;
+		right: 17%;
+		top: 130px;
+	}
+	#animeLogo{
+		width: 12%;
+		left: 18%;
+		bottom: 130px;
+	}
+	#spotifyLogo{
+		width: 9.5%;
+		right: 18%;
+		bottom: 130px;
+	}
+	#nextPageDota{
+		font-size: 20px;
+	}
+	#nextPageAnime{
+		font-size: 20px;
+	}
+	#emptyWhiteBlock{
+		height: 300vh;
+	}
+}
+
+
+@media screen and (max-width: 4000px) and (min-width: 2300px){
+	#leftTopTriangle{
+		border:solid 250px;
+		border-color: #F35432 transparent transparent #F35432;
+	}
+	#leftBottomTriangle{
+		border:solid 250px;
+		border-color: transparent transparent #F35432 #F35432;
+	}
+	#rightBottomTriangle{
+		border:solid 250px;
+		border-color: transparent #F35432 #F35432 transparent;
+	}
+	#rightTopTriangle{
+		border:solid 250px;
+		border-color: #F35432 #F35432 transparent transparent;
+	}
+	#startButton{
+		top: 44vh;
+		font-size: 55px;
+		border-radius: 30px;;
+	}
+	#dotaLogo{
+		width: 15%;
+		top: 160px;
+	}
+	#gamabunta{
+		width: 12%;
+	}
+	#animeLogo{
+		width: 12%;
+	}
+	#spotifyLogo{
+		width: 9.5%;
+	}
+	.swal-text{
+		font-size: 30px;
+	}
+	#loadingScreen1{
+		width: 40%;
+		margin-left: 30%;
+		height: 400px;
+		font-size: 40px;
+		padding-top: 250px;
+		border-radius: 40px;
+	}
+	#loadingScreen2{
+		width: 40%;
+		margin-left: 30%;
+		height: 400px;
+		font-size: 40px;
+		padding-top: 250px;
+		border-radius: 40px;
+	}
+	#title{
+		font-size: 30px;
+	}
+	#firstBlock{
+		height: 900px;
+		border-radius: 40px;
+		box-shadow: rgba(14, 30, 37, 0.12) 0px 4px 8px 0px, rgba(14, 30, 37, 0.32) 0px 4px 32px 0px;
+	}
+	#secondBlock{
+		height: 900px;
+		border-radius: 40px;
+		box-shadow: rgba(14, 30, 37, 0.12) 0px 4px 8px 0px, rgba(14, 30, 37, 0.32) 0px 4px 32px 0px;
+	}
+	#thirdBlock{
+		height: 900px;
+		border-radius: 40px;
+		box-shadow: rgba(14, 30, 37, 0.12) 0px 4px 8px 0px, rgba(14, 30, 37, 0.32) 0px 4px 32px 0px;
+	}
+	#nextPageDota{
+		font-size: 30px;
+	}
+	#titleAnime{
+		font-size: 30px;
+	}
+	#firstBlockAnime{
+		height: 900px;
+		border-radius: 40px;
+		box-shadow: rgba(14, 30, 37, 0.12) 0px 4px 8px 0px, rgba(14, 30, 37, 0.32) 0px 4px 32px 0px;
+	}
+	#secondBlockAnime{
+		height: 900px;
+		border-radius: 40px;
+		box-shadow: rgba(14, 30, 37, 0.12) 0px 4px 8px 0px, rgba(14, 30, 37, 0.32) 0px 4px 32px 0px;
+	}
+	#thirdBlockAnime{
+		height: 900px;
+		border-radius: 40px;
+		box-shadow: rgba(14, 30, 37, 0.12) 0px 4px 8px 0px, rgba(14, 30, 37, 0.32) 0px 4px 32px 0px;
+	}
+	#nextPageAnime{
+		font-size: 30px;
+	}
+	#pinkBlock{
+		font-size: 30px;
+		border-radius: 50px;
+	}
+	#backToDota{
+		font-size: 35px;
+		margin-top: 200px;
+	}
+	#backToAnime{
+		font-size: 35px;
+		margin-top: 200px;
+	}
+	#textInPinkBlock{
+		padding-top: 100px;
+	}
+	#mapNavigation{
+		border-radius: 50px;
+	}
+	.swal-modal{
+		border-radius: 20px;
+	}
+	#backButton{
+		font-size: 40px;
+	}
+	#backButton2{
+		font-size: 40px;
+	}
+	.swal-button{
+		font-size: 30px;
+	}
+}
+
+
+@media screen and (max-width: 4000px) and (min-width: 3700px){
+	#startButton{
+		font-size: 80px;
+	}
+/*	.swal-icon{
+		width: 160px;
+		height: 160px;
+	}
+	.swal-icon--success__ring{
+		width: 160px;
+		height: 160px;
+	}
+	.swal-icon--success__hide-corners{
+		width: 10px;
+		height: 180px;
+	}
+	.swal-icon--success__line--tip{
+		width: 50px;
+		height: 10px;
+	}
+	.swal-icon--success__line--long{
+		width: 94px;
+		height: 10px;
+	}*/
+	.swal-title{
+		font-size: 60px;
+	}
+	.swal-text{
+		text-align: center;
+		font-size: 60px;
+	}
+	#loadingScreen1{
+		height: 600px;
+		font-size: 50px;
+		padding-top: 350px;
+	}
+	#loadingScreen2{
+		height: 600px;
+		font-size: 50px;
+		padding-top: 350px;
+	}
+	#title{
+		font-size: 40px;
+	}
+	#firstBlock{
+		height: 1400px;
+		border-radius: 40px;
+		box-shadow: rgba(14, 30, 37, 0.12) 0px 4px 8px 0px, rgba(14, 30, 37, 0.32) 0px 4px 32px 0px;
+		margin-top: 200px;
+	}
+	#secondBlock{
+		height: 1400px;
+		border-radius: 40px;
+		box-shadow: rgba(14, 30, 37, 0.12) 0px 4px 8px 0px, rgba(14, 30, 37, 0.32) 0px 4px 32px 0px;
+		margin-top: 200px;
+	}
+	#thirdBlock{
+		height: 1400px;
+		border-radius: 40px;
+		box-shadow: rgba(14, 30, 37, 0.12) 0px 4px 8px 0px, rgba(14, 30, 37, 0.32) 0px 4px 32px 0px;
+		margin-top: 200px;
+	}
+	#nextPageDota{
+		font-size: 50px;
+		height: 200px;
+		margin-top: 50px;
+		border-radius: 60px;
+	}
+	#titleAnime{
+		font-size: 40px;
+	}
+	#firstBlockAnime{
+		height: 1400px;
+		border-radius: 40px;
+		box-shadow: rgba(14, 30, 37, 0.12) 0px 4px 8px 0px, rgba(14, 30, 37, 0.32) 0px 4px 32px 0px;
+		margin-top: 200px;
+	}
+	#secondBlockAnime{
+		height: 1400px;
+		border-radius: 40px;
+		box-shadow: rgba(14, 30, 37, 0.12) 0px 4px 8px 0px, rgba(14, 30, 37, 0.32) 0px 4px 32px 0px;
+		margin-top: 200px;
+	}
+	#thirdBlockAnime{
+		height: 1400px;
+		border-radius: 40px;
+		box-shadow: rgba(14, 30, 37, 0.12) 0px 4px 8px 0px, rgba(14, 30, 37, 0.32) 0px 4px 32px 0px;
+		margin-top: 200px;
+	}
+	#nextPageAnime{
+		font-size: 50px;
+		height: 200px;
+		margin-top: 50px;
+		border-radius: 60px;
+	}
+	#emptyWhiteBlock{
+		height: 270vh;
+	}
+	#mapNavigation{
+		border-radius: 60px;
+	}
+	#pinkBlock{
+		font-size: 50px;
+		border-radius: 60px;
+	}
+	#backToDota{
+		font-size: 55px;
+	}
+	#backToAnime{
+		font-size: 55px;
+	}
+	#textInPinkBlock{
+		padding-top: 200px;
+	}
+	.swal-button{
+		font-size: 40px;
+	}
+	#backButton2{
+		font-size: 60px;
+	}
+	#backButton{
+		font-size: 60px;
+	}
+}
