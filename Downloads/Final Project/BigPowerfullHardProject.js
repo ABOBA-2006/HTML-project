@@ -318,3 +318,22 @@ function backAnimeToNav(){
   $("#nextPageAnime").delay(1300).fadeOut(0);
   setTimeout(function(){navigationPageAnimations();},2000);
 }
+
+$("#slideshow > div:gt(0)").hide();
+
+var array = ["Aloha Dance", "Papich", "Zxcursed", "Stray"];
+var index = 1;
+
+setInterval(function() {
+  $("#streamerName").fadeOut(0).text(array[index]).fadeIn(1000);
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+  index ++;
+  if (index >=array.length){
+    index = 0;
+  };
+}, 3000);
